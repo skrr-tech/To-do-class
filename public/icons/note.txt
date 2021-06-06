@@ -1,0 +1,3 @@
+unselected: opacity 20
+hover: opacity 1
+selected: white
