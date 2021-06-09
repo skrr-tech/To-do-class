@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node server",
     "dev": "nodemon server",
     "w-home": "browserify ./public/js/home-edit.js -o ./public/js/home.js",
-    "w-admin": "browserify ./private/js/admin-edit.js -o ./private/js/admin.js ",
-    "start": "node server"
+    "w-admin": "browserify ./private/js/admin-edit.js -o ./private/js/admin.js "
   },
   "author": "",
   "license": "ISC",
