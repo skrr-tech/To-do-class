@@ -7,6 +7,7 @@ const app = express();
 const bcrypt = require('bcrypt');
 const initPassport = require('./authentication/passport-config');
 const db = require('./database/dbFuncs');
+const port = 5000 || process.env.PORT;
 const {
   isAuth,
   isNotAuth,
@@ -104,6 +105,6 @@ app.get('/private/js/admin.js', isAuth, (req, res) => {
   res.status(200).sendFile(path.join(__dirname, 'private', 'js', 'admin.js'));
 });
 
-app.listen(5000, () => {
-  console.log('Listening at 5000');
+app.listen(port, () => {
+  console.log(`Listening at ${port}`);
 });
