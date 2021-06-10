@@ -7,7 +7,7 @@ const app = express();
 const bcrypt = require('bcrypt');
 const initPassport = require('./authentication/passport-config');
 const db = require('./database/dbFuncs');
-const port = 5000 || process.env.PORT;
+const port = process.env.PORT || 5000;
 const {
   isAuth,
   isNotAuth,
