@@ -11,7 +11,7 @@ body {
   display: flex;
 }
 .todo {
-  width: fit-content;
+  width: 100%;
   align-content: flex-start;
   font-family: Roboto;
   display: flex;
